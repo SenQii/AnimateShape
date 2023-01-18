@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+
+}
+section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+    /* height: 400px;
+    width: 400px;
+    border-radius: 20%;
+ */
+    background-color: #2c0818;
+}
+.bob{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+stop[offset='1']{
+    stop-color: rgb(181, 52, 113);
+    
+}
+stop[offset='0']{
+    stop-color: rgb(76, 161, 175);
+    
+}
+
+.none{
+stop-color: #12373c;
+stop-color: #7f3356;
+
+}
+.bob:nth-child(2){
+    filter: blur(10px);
+}
