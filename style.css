@@ -24,21 +24,24 @@ section{
 }
 .bob{
     position: absolute;
-    width: 500px;
-    height: 500px;
-}
-stop[offset='1']{
-    stop-color: rgb(181, 52, 113);
-    
+    width: 550px;
+    height: 550px;
 }
 stop[offset='0']{
-    stop-color: rgb(76, 161, 175);
-    
+    stop-color: var(--topColor);
+}
+stop[offset='1']{
+    stop-color: var(--bottomColor);   
+}
+
+:root{
+    --topColor:rgb(76, 161, 175);
+    --bottomColor:rgb(181, 52, 113);
 }
 
 .none{
-stop-color: #12373c;
-stop-color: #7f3356;
+stop-color: rgb(181, 52, 113);
+stop-color: rgb(76, 161, 175);
 
 }
 .bob:nth-child(2){
